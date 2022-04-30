@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Confirmador de senhas</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="container">
+          <p>
+            Sua senha deve conter no mínimo 8 caracteres e ser composta por
+            números, caracteres especiais e letras maiúsculas e minúsculas.
+          </p>
+          <label for="pass1">Senha:</label>
+          <input type="password" class="pass1" password />
+          <img src="img/eyeOn.png" class="on" onclick="eyeClick()" />
+        </div>
+        <div class="container">
+          <label for="pass2" class="conf">Confirmar: </label>
+          <input type="password" class="pass2" />
+          <img src="img/eyeOn.png" class="on2" onclick="eyeClick2()" />
+        </div>
+        <button type="submit" onclick="Validar()">Confirmar</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
